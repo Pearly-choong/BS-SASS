@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <!-- bootstrap theme to be customize - use folder with sass because we need an uncompiled version of bootstrap -->
+
+    <!-- always keep your own shtylesheet at the end of all the links -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Bootstrap SASS</title>
+  </head>
+  <body>
+    <h1 id="heading" class="jumbotron myJumbo">Bootstrap SASS</h1>
+
+    <div class="container">
+
+        <div class="text-center">
+          <button type="button" class="btn btn-lg btn-secondary mt-5" id="homeBtn">Home</button>
+          <button type="button" class="btn btn-lg btn-secondary mt-5" id="mapBtn">Map</button>
+        </div>
+
+
+      <div id="home">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p class="py-5 text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora cumque adipisci dolore reiciendis amet, doloribus atque soluta facere ea at sequi recusandae hic. Eveniet nesciunt numquam aliquam, deleniti atque.</p>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <p class="py-5 text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore tempora cumque adipisci dolore reiciendis amet, doloribus atque soluta facere ea at sequi recusandae hic. Eveniet nesciunt numquam aliquam, deleniti atque.</p>
+            </div>
+          </div>
+
+
+
+        <div class="row align">
+            <div class="col-12 col-md-6">
+              <img class="img-thumbnail rounded-pill size" src="images/beach.jpg" alt="beach"/>
+              <button type="button" class="btn btn-lg btn-secondary mt-5 myBtn">View More</button>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <img class="img-thumbnail rounded-pill size" src="images/fashion.jpg" alt="fashion"/>
+              <button type="button" class="btn btn-lg btn-secondary mt-5 myBtn">View More</button>
+            </div>
+        </div>
+     </div> <!-- end of home page -->
+
+
+    <div id="map">Map goes here </div>
+
+
+  </div> <!-- end of container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+
+    <script src="js/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  -->
+
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>
