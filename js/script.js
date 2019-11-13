@@ -1,5 +1,11 @@
 console.log('Bootstrap custome theme');
 
+
+// access API key from config.json
+var myKey = JSON.parse(apiKey); // convert JSON into js object
+console.log(myKey[0].key);
+
+
 $('#map').hide();
 $('#home').show();
 
@@ -21,7 +27,11 @@ $(document).ready(function(){
 
 });
 
-
+// dynamically creating the script elements and
+// giving src attribute the google plug in with key from external JSON
+var script = document.createElement('script');
+script.src = 'https://maps.googleapis.com/maps/api/js?key=' + myKey[0].key + '&callback=initMap'
+document.getElementsByTagName('body')[0].appendChild(script);
  // var map;
  //      function initMap() {
  //        map = new google.maps.Map(document.getElementById('map'), {
@@ -80,6 +90,6 @@ function initMap() {
   	marker.addListener('click', function() {
     infowindow.open(map, marker1);
   	});
-	
+
 
 }
